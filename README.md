@@ -1,1 +1,0 @@
-A simple website built For the ALX lauchpad application process
