@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://alx-apply.hbtn.io/level2/school.css" rel="stylesheet">
+  <script src="behavior.js"></script>
+  <link href="styles.css" rel="stylesheet">
+  <title>
+    Startups
+  </title>
+  <meta charset="UTF-8">
+</head>
+
+<body class="works_on_smartphone">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0"
+    nonce="JrshFo2F"></script>
+  <header class="navigation">
+    <div class="right"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+        data-text="Africa to the world" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="fb-share-button right" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"
+      data-size="small"><a target="_blank"
+        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+        class="fb-xfbml-parse-ignore">Share</a></div>
+    <ul>
+      <li class="logo">&#9398;</li>
+      <li><a href="./startups.html">HOME</a></li>
+      <li><a href="./myafrica.html">MY AFRICA</a></li>
+      <li><a href="./startups.html">STARTUPS</a></li>
+      <li><a href="./tweets.html">OUR-STORIES</a></li>
+      <li><a href="./aboutme.html">ABOUT-ME</a></li>
+
+    </ul>
+  </header>
+  <main>
+    <article>
+      <div class="topBar">THE AFRICA THEY DON'T TELL YOU ABOUT.</div>
+      <br>
+      <br>
+      The media has painted Africa as a hopeless continent.
+      <br>
+      We are committed to changing this narrative by bringing you the best from all over Africa.
+      <br>
+      <br>
+      <u> <b class="heading">NAIROBI</b></u>
+      <br>
+      <p>Nairobi is the capital city of Kenya
+        <br>
+        It is sometimes referred to as the city in the sun.
+        <br>
+        The below images will give you an image of one of the largest and most developed cities
+        <br>
+        in Africa that the media never shows you.
+      </p>
+
+
+
+
+
+      <div class="mySlides">
+
+        <img
+          src="https://media.gettyimages.com/photos/nairobi-kenya-looking-over-the-park-towards-the-busy-kenyatta-avenue-picture-id517003864?s=2048x2048"
+          style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="https://media.gettyimages.com/photos/giraffe-against-city-skyline-picture-id170625026?s=2048x2048"
+          style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="https://data.whicdn.com/images/42277184/original.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="https://www.sojournsafaris.co.ke/wp-content/uploads/2019/05/NNP.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+
+        <img src="https://cdn.standardmedia.co.ke/sdemedia/sdeimages/thursday/thumb_aleto6ipqvct98u6qv5a576f316afbd.jpg"
+          style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="https://pentrental.com/wp-content/uploads/2019/12/Nairobi-2000x1200.jpeg" alt="">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="chttps://www.jambonews.co.ke/wp-content/uploads/2018/12/PhotoGrid_1544175671811.jpgolumn">
+          <img src="" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor"
+            src="https://media.gettyimages.com/photos/giraffe-against-city-skyline-picture-id170625026?s=2048x2048"
+            style="width:100%" onclick="currentSlide(2)" alt="Nairobi's beautiful scenery that you have never seen">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://data.whicdn.com/images/42277184/original.jpg" style="width:100%"
+            onclick="currentSlide(3)" alt="Nairobi's rich biodiversity courtesy of Nairobi National park">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://www.sojournsafaris.co.ke/wp-content/uploads/2019/05/NNP.jpg"
+            style="width:100%" onclick="currentSlide(4)" alt="World class infrastructure">
+        </div>
+        <div class="column">
+          <img class="demo cursor"
+            src="https://cdn.standardmedia.co.ke/sdemedia/sdeimages/thursday/thumb_aleto6ipqvct98u6qv5a576f316afbd.jpg"
+            style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://pentrental.com/wp-content/uploads/2019/12/Nairobi-2000x1200.jpeg"
+            style="width:100%" onclick="currentSlide(6)" alt="Nairobi at night">
+        </div>
+      </div>
+
+
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = slides.length
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+      </script>
+
+      <br>
+      <br>
+      <b>more coming under this section</b>
+
+    </article>
+    <aside>
+      <div id="disqus_thread"></div>
+      <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document,
+            s = d.createElement('script');
+          s.src = 'https://3-237-6-73.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+          by Disqus.</a></noscript>
+    </aside>
+
+  </main>
+  <footer>
+    <p>Made by David Mutune for <a href="https://alx-apply.hbtn.io" target="_blank">ALX</a>.</p>
+  </footer>
+</body>
+
+</html>
